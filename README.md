@@ -1,4 +1,4 @@
-##Fejlesztéshez használt eszközök
+## Fejlesztéshez használt eszközök
 
   - Php 7.2
   - Myql 5.7
@@ -10,7 +10,7 @@
      kis-nagybetű probléma a fájlnevekben, azaz lehet, hogy nem 
      talál meg bizonyos nevű fájlt.
 
-##Telepítés
+## Telepítés
 
 1. Forrás letöltése git-ből.
 
@@ -50,7 +50,7 @@
        ...\app\common\config\params-local.php
        'source_url' paraméter
 
-##Megjegyzések
+## Megjegyzések
 
 - A feladatnak az olvasatomban nem volt része bejelentkezés illetve jogosultság kezelés.
   Nagyvonalúan kihagytam őket.
@@ -61,7 +61,7 @@
                   console\runtime\logs
 
 
-##A feldatot végző komponensek
+## A feldatot végző komponensek
 
 ...\app\frontend\controllers\LoadedUsersController.php
    A komponens nagy részét a Yii generátora végezte.
@@ -74,7 +74,7 @@
    A konzol parancsot kiszolgáló controller osztály.
 
 
-##Működtetés / használat
+## Működtetés / használat
 
 A felhasználókat a Felhasználók menüpontban lehet megnézni, karbantartani, áttölteni.
 Parancsorból a program fő könyvtárban lévő run_loaduser.bat (windows) vagy run_loaduser.sh (linux)
