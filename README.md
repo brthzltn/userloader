@@ -32,31 +32,29 @@
 3. Apache konfigurálása 
 	Alias létrehozása:
 ```html
-<pre>
 	​     Alias /brth_userload ".../app/frontend/web/"
-	​     \<Directory ".../app/frontend/web/"\>
+	​     <Directory ".../app/frontend/web/"\>
 	​          Options All 
 	​          AllowOverride All
 	​          Order allow,deny
 	​          Allow from all
 	​      </Directory>
-</pre>
+
 ```
 
 4. Alkalmazás paraméterek ellenőrzése (beállítása)
 
 	Adatbázis kapcsolat beállítása (csak szükség esetén):
-  
-  ​     ...\app\common\config\main-local.php
-
-	​     'db' szekció
+<pre>
+     ...\app\common\config\main-local.php
+     'db' szekció
+</pre>
   
   Forrás url:
-  
-  ​     ...\app\common\config\params-local.php
-  
-  ​     'source_url' paraméter
-
+<pre>
+     ...\app\common\config\params-local.php
+     'source_url' paraméter
+</pre>
 ## Megjegyzések
 
 - A feladatnak az olvasatomban nem volt része bejelentkezés illetve jogosultság kezelés.
