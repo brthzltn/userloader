@@ -32,23 +32,27 @@
 3. Apache konfigurálása 
 	Alias létrehozása:
 
-	Alias /brth_userload ".../app/frontend/web/"
-	<Directory ".../app/frontend/web/">
-	     Options All 
-	     AllowOverride All
-	     Order allow,deny
-	     Allow from all
-	</Directory>
+	`Alias /brth_userload ".../app/frontend/web/"`
+	`<Directory ".../app/frontend/web/">`
+	     `Options All` 
+	     `AllowOverride All`
+	     `Order allow,deny`
+	     `Allow from all`
+	`</Directory>`
 
 4. Alkalmazás paraméterek ellenőrzése (beállítása)
 
 	Adatbázis kapcsolat beállítása (csak szükség esetén):
-       ...\app\common\config\main-local.php
-       'db' szekció
+  
+  ​     ...\app\common\config\main-local.php
 
-	Forrás url:
-       ...\app\common\config\params-local.php
-       'source_url' paraméter
+	​     'db' szekció
+  
+  Forrás url:
+  
+  ​     ...\app\common\config\params-local.php
+  
+  ​     'source_url' paraméter
 
 ## Megjegyzések
 
@@ -57,20 +61,24 @@
 - A magukat a képeket nem, csak a hozzájuk vezető url-eket töltöttem át (szintén az értelmezésem szerint).
 - A részletes hibaüzenetek a log-ban keletkeznek a felületre (frontend, console) csak a hiba
   tényét jelzem ki.
-  Log könyvtárak: frontend\runtime\logs
-                  console\runtime\logs
+  
+  Log könyvtárak: 
+      frontend\runtime\logs
+      console\runtime\logs
 
 
 ## A feldatot végző komponensek
 
 ...\app\frontend\controllers\LoadedUsersController.php
-   A komponens nagy részét a Yii generátora végezte.
-   Az actionLoad metódus a saját, az végzi a felhasználók áttöltését a UsersLoader osztály segítségével.
+
+   A komponens nagy részét a Yii generátora végezte. Az actionLoad metódus a saját, az végzi a felhasználók áttöltését a UsersLoader osztály segítségével.
 
 ...\app\common\components\UsersLoader.php
+
    Az áttöltést végző osztály.   
 
 ...\app\console\controllers\LoadedUsersController.php
+
    A konzol parancsot kiszolgáló controller osztály.
 
 
