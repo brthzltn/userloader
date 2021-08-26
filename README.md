@@ -31,7 +31,7 @@
 
 3. Apache konfigurálása 
 	Alias létrehozása:
-
+<pre>
 	​     Alias /brth_userload ".../app/frontend/web/"
 	​     <Directory ".../app/frontend/web/">
 	​          Options All 
@@ -39,6 +39,7 @@
 	​          Order allow,deny
 	​          Allow from all
 	​      </Directory>
+</pre>
 
 4. Alkalmazás paraméterek ellenőrzése (beállítása)
 
